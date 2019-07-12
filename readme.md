@@ -8,7 +8,7 @@ Making an Internet of Things Bubble Maker is a surefire way to make any space mo
 
 ![Bubblemaker and bubbles photos](https://i.imgur.com/45nNjBf.jpg)
 
-Our goal is a bubble maker that can be controlled from the web, just like [http://bubblesrightnow.com/]. We'll be using Python on a Raspberry Pi to start a server so Post requests from a webpage can switch GPIO pins on the pi– that will switch the relay, which in turn will power on or off the bubble maker. 
+Our goal is a bubble maker that can be controlled from the web, just like (bubblesrightnow.com)[http://bubblesrightnow.com/]. We'll be using Python on a Raspberry Pi to start a server so Post requests from a webpage can switch GPIO pins on the pi– that will switch the relay, which in turn will power on or off the bubble maker. 
 
 Along the way we'll have to configure a dynamic DNS server, add some security protections to the Pi, and experiment a bit with Daemons. The hardware and software for this project are pretty simple, but the networking is actually a little challenging.
 

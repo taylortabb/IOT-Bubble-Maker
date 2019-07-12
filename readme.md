@@ -2,7 +2,7 @@
 
 ![Bubblemaker and bubbles cover photo](https://github.com/taylortabb/IOT-Bubble-Maker/raw/master/docs/wall.jpg)
 
-Making an Internet of Things Bubble Maker is a surefire way to make any space more exciting. For most, following these instructions shouldn't take more than an afternoon. [Here](https://imgur.com/a/gs9m4LL) is what it all looks like.
+Making an Internet of Things Bubble Maker is a surefire way to make any space more exciting. For most, following these instructions shouldn't take more than an afternoon. [Here](https://imgur.com/a/gs9m4LL) are some more photos/videos of what it all looks like.
 
 ### Overview
 

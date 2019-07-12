@@ -155,6 +155,13 @@ And finally, I'd love to know if you've made a bubble maker— a whimsical long
 
 Have questions? You can connect with me [here](https://www.tabb.me/pittsbubble-feedback)
 
+## Some More Photos
+
+![Bubblemaker and bubbles photos](https://i.imgur.com/FoNp8ip.jpg)
+![Bubblemaker and bubbles photos](https://i.imgur.com/VwTkS8o.jpg)
+
+
+
 ## Authors
 
 - **Taylor Tabb** - [tabb.me](https://www.tabb.me/)

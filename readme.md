@@ -22,6 +22,8 @@ These are the parts you'll need to get started:
 
 °°ideally one that's not battery operated. I used [this](https://www.amazon.com/gp/product/B07FD4TD45) one.
 
+![Bubblemaker and bubbles photos](https://i.imgur.com/45nNjBf.jpg)
+
 ### System Setup
 
 To start, you'll need to make sure your RPi is running the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and connected to your network with SSH enabled. There are a bunch of ways to do this, but if you want to avoid plugging your pi into a screen and keyboard, follow my favorite steps below, otherwise **go ahead with whatever your preferred way of doing that is and skip to Hardware Setup!**
@@ -152,14 +154,6 @@ save and close the file. Type `sudo reboot` , and once your Pi reboots, the pyth
 At this point, try pressing the button on index.html! If all seems good, your IOT Bubble Maker is ready to use! To host the webpage for remote use of the bubble maker, [GitHub pages](https://pages.github.com/) is a super great simple option. And better yet, if you have a .edu email address, you can get a free domain name from [namecheap](https://nc.me/), so you can share a custom link to use your bubble maker with all your friends!
 
 And finally, I'd love to know if you've made a bubble maker— a whimsical long term goal is to create a world wide network of public bubble makers— If you would like your bubble maker listed and accessible from a hopefully-soon-to-exist [website](http://go.tabb.me/Global-Bubble-Dashboard/) of global bubble makers, shoot me a message [here](https://www.tabb.me/pittsbubble-feedback)
-
-Have questions? You can connect with me [here](https://www.tabb.me/pittsbubble-feedback)
-
-## Some More Photos
-
-![Bubblemaker and bubbles photos](https://i.imgur.com/45nNjBf.jpg)
-
-
 
 ## Authors
 

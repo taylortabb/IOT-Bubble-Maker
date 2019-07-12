@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Your friendly neighborhood Internet of Things Bubble Maker">
+   <meta name="title" content="IOT Bubble Maker">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <title>Bubbles</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+  <link rel="shortcut icon" href="favicon.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+
+<script type="text/javascript" src="http://use.typekit.com/ehu3rng.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74339615-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74339615-7');
+</script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="brick"> <img src="bubble.png" height="190px" align="right"></div>
+    <div class="content">
+      <h1 class="title">Bubbles right NOW!</h1><br>
+      <p>SMASH THAT BUTTON FOR 5 SECONDS OF BUBBLES</p>
+
+      <form id="myForm">
+
+           <input type="hidden" name="duration" value="5">
+
+           <input type="submit" value="BUBBLES" class="download-button"></input> 
+
+         </form>
+    </div>
+  </div>
+
+<footer class="footer">
+    <a href="https://github.com/taylortabb/IOTbubblemaker" target="_new">Build Your Own</a> &#8226; <a href="http://tabb.me" target="_new">tabb.me</a>
+  </footer>
+
+  <footer class="twitter-links">
+    <p>Pittsburgh, PA 📍</p>
+    <a href="http://tabb.me/pittsbubble-feedback">Concerned Neighbor?</a>
+  </footer>
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+// Variable to hold request
+var request;
+
+// Bind to the submit event of our form
+$("#myForm").submit(function(event){
+
+    // Prevent default posting of form - put here to work in case of errors
+    event.preventDefault();
+
+    // Abort any pending request
+    if (request) {
+      request.abort();
+    }
+    // setup some local variables
+    var $form = $(this);
+
+    // Let's select and cache all the fields
+    var $inputs = $form.find("input, select, button, textarea");
+
+    // Serialize the data in the form
+    var serializedData = $form.serialize();
+
+    // Let's disable the inputs for the duration of the Ajax request.
+    // Note: we disable elements AFTER the form data has been serialized.
+    // Disabled form elements will not be serialized.
+    $inputs.prop("disabled", true);
+
+    // Fire off the request to /form.php
+    request = $.ajax({
+      url: "http://bubblemachine1.ddns.net:8080",
+      type: "post",
+      data: serializedData
+    });
+
+    // Callback handler that will be called on success
+    request.done(function (response, textStatus, jqXHR){
+        // Log a message to the console
+        console.log("Hooray, it worked!");
+      });
+
+    // Callback handler that will be called on failure
+    request.fail(function (jqXHR, textStatus, errorThrown){
+        // Log the error to the console
+        console.error(
+          "The following error occurred: "+
+          textStatus, errorThrown
+          );
+      });
+
+    // Callback handler that will be called regardless
+    // if the request failed or succeeded
+    request.always(function () {
+        // Reenable the inputs
+        $inputs.prop("disabled", false);
+      });
+
+  });
+</script>
+
+<script type="text/javascript">
+
+  /mobile/i.test(navigator.userAgent) && !location.hash &&
+  setTimeout(function () {   window.scrollTo(0, 1); }, 1000);​
+
+</script>
+
+</body>
+</html>

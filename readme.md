@@ -157,8 +157,7 @@ Have questions? You can connect with me [here](https://www.tabb.me/pittsbubble-f
 
 ## Some More Photos
 
-![Bubblemaker and bubbles photos](https://i.imgur.com/FoNp8ip.jpg)
-![Bubblemaker and bubbles photos](https://i.imgur.com/VwTkS8o.jpg)
+![Bubblemaker and bubbles photos](https://i.imgur.com/45nNjBf.jpg)
 
 
 

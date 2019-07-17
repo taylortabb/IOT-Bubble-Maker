@@ -143,7 +143,7 @@ Now we'll make sure all this runs each time you turn on the pi. This will mean w
 
 scroll all the way to the bottom and paste the following to ensure the bubble server and dynamic dns add on run after every reboot.
 
-`@reboot python /home/pi/bubbles/bubble_server.py`
+`@reboot python /home/pi/bubbles/IOT-Bubble-Maker/bubble_server.py`
 
 `@reboot sudo /usr/local/bin/noip2`
 

@@ -73,7 +73,7 @@ To start, plug that bubble maker in and enjoy some bubbles! Next, turn the on/of
 
 The relay signal pin is connected to Pi pin 7, and the power for the bubble maker is attached to the relay, in the "NO" or "Normally Open" direction. Now power everything up! The bubble maker should not be blowing at this point.
 
-### Bubble-Server
+### Bubble_Server
 
 Getting the server going is actually the easiest part of all of this!
 
@@ -95,11 +95,11 @@ Enter the directory
 
 `cd IOT-Bubble-Maker`
 
-And open bubble-server.py to get an idea what's going on `nano bubble-server.py` and follow the notes in the code. 
+And open bubble_server.py to get an idea what's going on `nano bubble_server.py` and follow the notes in the code. 
 
-`sudo nano bubble-server.py`
+`sudo nano bubble_server.py`
 
-That's it! you're ready to run the server with `python bubble-server.py`
+That's it! you're ready to run the server with `python bubble_server.py`
 
 ### The Webpage
 
@@ -143,7 +143,7 @@ Now we'll make sure all this runs each time you turn on the pi. This will mean w
 
 scroll all the way to the bottom and paste the following to ensure the bubble server and dynamic dns add on run after every reboot.
 
-`@reboot python /home/pi/bubbles/bubble-server.py`
+`@reboot python /home/pi/bubbles/bubble_server.py`
 
 `@reboot sudo /usr/local/bin/noip2`
 

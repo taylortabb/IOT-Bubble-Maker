@@ -54,7 +54,7 @@ p {
   font-weight: normal;
   margin-top: -8px;
   color: #fff;
-  font-family: "cubano", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 40px;
 }
 .download-button {
@@ -68,7 +68,7 @@ p {
   border-color: #d0162c;
   border-style: solid;
   text-align: center;
-  font-family: "cubano", sans-serif;
+  font-family: "Dosis", sans-serif;
   letter-spacing: 5px;   
 }
 .download-button:hover {
@@ -90,7 +90,7 @@ p {
   bottom: 50px;
   right: 50px;
   color: #fff;
-  font-family: "cubano", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #fff;
 }

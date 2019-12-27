@@ -97,7 +97,7 @@ Enter the directory
 
 And open bubble_server.py to get an idea what's going on `nano bubble_server.py` and follow the notes in the code. 
 
-`sudo nano bubble_server.py`
+`nano bubble_server.py`
 
 That's it! you're ready to run the server with `python bubble_server.py`
 

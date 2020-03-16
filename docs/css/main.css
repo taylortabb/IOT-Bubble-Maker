@@ -1,26 +1,3 @@
-/*twitch*/
-.twitchWrapper {
-    position: relative;
-    height: 100%;
-    display: grid;
-}
-
-#twitchStream {
-    width:100%;
-    height: 100%;
-    margin: auto;
-    opacity: 0.8;
-}
-
-#twitchStream iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-} 
-
 /* #Layout
 ================================================== */
 body {
